@@ -1,0 +1,42 @@
+<!--Dynamic Task Manager & Productivity Tracker (CRUD)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task Manager & Productivity Tracker (CRUD)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="container"> 
+        <h1>  Productivity Tracker </h1>
+
+        <!-- form to create Task-->
+     <form class="task-form" id = "taskForm">
+        <div class="input-group">
+            <input type="text"  id = "taskInput" placeholder="    Add a new task ......." required>
+            <button type="submit" class ="add-btn">Add 
+            </button>
+        </div>
+     <div class ="meta-group">
+    <select  id="categoryInput">
+        <option value="Work"> Work </option>
+        <option value="Personal"> Personal </option>
+        <option value="study">study </option>
+    </select>
+    <input type="date" id="dateInput">
+       </div>
+    </form>
+
+    <div class ="filters">
+        <button class ="filter-btn active"  data-filter="all">All</button>
+         <button class ="filter-btn "  data-filter="active">Active</button>
+          <button class ="filter-btn "  data-filter="completed">Completed</button>
+    </div>
+
+    <ul class = "task-list" id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
